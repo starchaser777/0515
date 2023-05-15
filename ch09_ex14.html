@@ -6,49 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var birthYear = parseInt(prompt('* 출생년도를 입력하면 띠를 알려드립니다.', '출생년도 입력'))
-        var exp1 = birthYear % 12;
-        var result = "";
-        switch (exp1) {
-            case 0:
-                result = "원숭이";
-                break;
-            case 1:
-                result = "닭";
-                break;
-            case 2:
-                result = "개";
-                break;
-            case 3:
-                result = "돼지";
-                break;
-            case 4:
-                result = "쥐";
-                break;
-            case 5:
-                result = "소";
-                break;
-            case 6:
-                result = "범";
-                break;
-            case 7:
-                result = "토끼";
-                break;
-            case 8:
-                result = "용";
-                break;
-            case 9:
-                result = "뱀";
-                break;
-            case 10:
-                result = "말";
-                break;
-            case 11:
-                result = "양";
-                break;
-        }
+        var birth = parseInt(prompt('* 출생년도를 입력하면 띠를 알려드립니다.', '출생년도 입력'))
 
-        alert(birthYear + '년도생은 ' + result + '띠입니다.');
+        function calcResult(birth) {
+            var exp1 = birth % 12;
+            var result = "";
+            switch (exp1) {
+                case 0:
+                    result = "원숭이";
+                    break;
+                case 1:
+                    result = "닭";
+                    break;
+                case 2:
+                    result = "개";
+                    break;
+                case 3:
+                    result = "돼지";
+                    break;
+                case 4:
+                    result = "쥐";
+                    break;
+                case 5:
+                    result = "소";
+                    break;
+                case 6:
+                    result = "범";
+                    break;
+                case 7:
+                    result = "토끼";
+                    break;
+                case 8:
+                    result = "용";
+                    break;
+                case 9:
+                    result = "뱀";
+                    break;
+                case 10:
+                    result = "말";
+                    break;
+                case 11:
+                    result = "양";
+                    break;
+            }
+            return result;
+        }
+        
+        alert(birth + '년도생은 ' + calcResult(birth) + '띠입니다.');
 
         // if (birthYear % 12 == 0) {
         //     alert('원숭이띠');

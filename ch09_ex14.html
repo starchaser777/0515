@@ -6,32 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        year = 2022;
-        if (year % 12 == 0) {
-            alert('원숭이띠');
-        } else if (year % 12 == 1) {
-            alert('닭띠');
-        } else if (year % 12 == 2) {
-            alert('개띠');
-        } else if (year % 12 == 3) {
-            alert('돼지띠');
-        } else if (year % 12 == 4) {
-            alert('쥐띠');
-        } else if (year % 12 == 5) {
-            alert('소띠');
-        } else if (year % 12 == 6) {
-            alert('범띠');
-        } else if (year % 12 == 7) {
-            alert('토끼띠');
-        } else if (year % 12 == 8) {
-            alert('용띠');
-        } else if (year % 12 == 9) {
-            alert('뱀띠');
-        } else if (year % 12 == 10) {
-            alert('말띠');
-        } else {
-            alert('양띠');
+        var birthYear = parseInt(prompt('* 출생년도를 입력하면 띠를 알려드립니다.', '출생년도 입력'))
+        var exp1 = birthYear % 12;
+        var result = "";
+        switch (exp1) {
+            case 0:
+                result = "원숭이";
+                break;
+            case 1:
+                result = "닭";
+                break;
+            case 2:
+                result = "개";
+                break;
+            case 3:
+                result = "돼지";
+                break;
+            case 4:
+                result = "쥐";
+                break;
+            case 5:
+                result = "소";
+                break;
+            case 6:
+                result = "범";
+                break;
+            case 7:
+                result = "토끼";
+                break;
+            case 8:
+                result = "용";
+                break;
+            case 9:
+                result = "뱀";
+                break;
+            case 10:
+                result = "말";
+                break;
+            case 11:
+                result = "양";
+                break;
         }
+
+        alert(birthYear + '년도생은 ' + result + '띠입니다.');
+
+        // if (birthYear % 12 == 0) {
+        //     alert('원숭이띠');
+        // } else if (birthYear % 12 == 1) {
+        //     alert('닭띠');
+        // } else if (birthYear % 12 == 2) {
+        //     alert('개띠');
+        // } else if (birthYear % 12 == 3) {
+        //     alert('돼지띠');
+        // } else if (birthYear % 12 == 4) {
+        //     alert('쥐띠');
+        // } else if (birthYear % 12 == 5) {
+        //     alert('소띠');
+        // } else if (birthYear % 12 == 6) {
+        //     alert('범띠');
+        // } else if (birthYear % 12 == 7) {
+        //     alert('토끼띠');
+        // } else if (birthYear % 12 == 8) {
+        //     alert('용띠');
+        // } else if (birthYear % 12 == 9) {
+        //     alert('뱀띠');
+        // } else if (birthYear % 12 == 10) {
+        //     alert('말띠');
+        // } else {
+        //     alert('양띠');
+        // }
     </script>
 </head>
 <body>

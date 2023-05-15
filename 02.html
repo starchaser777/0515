@@ -9,7 +9,13 @@
         var arr = ['apple', 'pear', 'banana', 'kiwi', 'berry'];
 
         var i = 0;
-        while (i < arr.length) {
+        // while (i < arr.length) {
+        //     alert('arr['+ i +'] = ' + arr[i]);
+        //     i++;
+        // }
+        while (true) {
+            if (i == arr.length)
+                break;
             alert('arr['+ i +'] = ' + arr[i]);
             i++;
         }
